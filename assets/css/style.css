@@ -6,6 +6,10 @@
     background-color: #676767;
 }
 
+.bg-color-three-reasons {
+    background-color: #fff;
+}
+
 .ui-menu-color-home {
     background-color: #e67e22;
 }
@@ -22,13 +26,29 @@
     background-color: #525252;
 }
 
-/*--------------------------------------------Special paddings/ margins/ text*/
+.row-table {
+    display: table;
+}
+
+.section-column {
+    display: table-cell;
+    padding: 0 30px 30px;
+    float: none;
+}
+
+.section-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+/* ----------------------------------------Special paddings/margins/text */
 
 h1,
 h2,
 h3,
-h4,
-h5 {
+h4 {
     margin: 0;
 }
 
@@ -40,6 +60,27 @@ h5 {
     font-family: "Exo", sans-serif;
     font-weight: 300;
     color: #fafafa;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.row-table {
+    display: table;
+}
+
+.section-column {
+    display: table-cell;
+    padding: 0 30px 30px;
+    float: none;
+}
+
+.section-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
 }
 
 /*--------------------------------------------Heading*/
@@ -88,15 +129,14 @@ header {
     font-size: 0;
 }
 
-#nav {
-    margin: 0;
-}
-
 #nav li {
     font-size: 14px;
     padding: 0;
 }
 
+#nav {
+    margin: 0;
+}
 
 .menuitem {
     height: 120px;
@@ -129,7 +169,6 @@ header {
     letter-spacing: 2px;
 }
 
-
 /*--------------------------------------------Hover.css*/
 
 .hvr-sweep-to-bottom:before {
@@ -145,7 +184,6 @@ footer {
     min-height: 120px;
     margin: 0;
 }
-
 
 .cv-pdf i {
     font-size: 18px;
