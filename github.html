@@ -11,10 +11,11 @@
         type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
         type="text/css" />
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/github-styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/github-information.js"></script>
-    <title>Claire Potter Resume</title>
+    <title>Claire Potter Resume - GitHub</title>
 </head>
 
 <body>
@@ -65,19 +66,21 @@
         </div>
     </header>
     <section class="container-fluid">
-        <div class="row bg-color-contact m-5">
-            <div>
-                <h3 class="contact-heading uppercase text-center">View My GitHub Projects:</h3>
-                <h5 class="uppercase text-center">(or change the username to search for other user profiles)</h5>
+        <div class="row bg-color-contact">
+            <div class="col m-5">
+                <h3 class="contact-heading uppercase text-center">View My GitHub Projects</h3>
+                <h5 class="text-center">You can also search for other user profiles</h5>
+
+                <div class="center-form">
+                    <input type="text" id="gh-username" value="claire-potter" oninput="fetchGitHubInformation()" />
+                    <div id="gh-user-data"></div>
+                    <div id="gh-repo-data"></div>
+
+                </div>
+
             </div>
         </div>
-        <div class="row m-5">
-        <div class="center-form">
-            <input type="text" id="gh-username" value="claire-potter" oninput="fetchGitHubInformation()">
-            <div id="gh-user-data" class="clearfix"></div>
-            <div id="gh-repo-data" class="clearfix"></div>
-        </div>
-        </div>
+
     </section>
     <footer class="container-fluid">
         <div id="footer-details" class="row">
