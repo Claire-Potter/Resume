@@ -32,6 +32,18 @@
     background-color: #71473a;
 }
 
+.ui-menu-color-contact {
+    background-color: #8f8f8f;
+}
+
+.ui-menu-color-interests {
+    background-color: rgba(2, 2, 58, 0.863);
+}
+
+.ui-menu-color-github {
+    background-color: rgb(170, 93, 5);
+}
+
 .row-table {
     display: table;
 }
