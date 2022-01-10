@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_qo8gtgWaqnMXNwAVZNc9t");
+   })();
+</script>
     <title>Claire Potter Resume</title>
 </head>
 <body>
@@ -61,19 +69,15 @@
             <div class="col">
                 <h3 class="contact-heading uppercase text-center p-3">Get In Touch</h3>
                 <h5 class="uppercase text-center p-3">Please complete the below form to contact me</h5>
-
                 <div class="center-form">
-                    <form>
-                        <input type="text" name="name" id="fullname" class="form-control m-2" placeholder="Name" required />
-                        <input type="email" name="email" id="emailaddress" class="form-control m-2" placeholder="Email" required />
-                        <textarea rows="5" name="projectsummary" id="projectsummary" class="form-control m-2" placeholder="Message" required></textarea>
-                        <div class="form-row text-center">
-                            <div class="col">
-                                <button type="submit" class="btn btn-secondary mt-5">Send</button>
-                            </div>
-                        </div>
+                    <form onsubmit="return sendMail(this);">
+                        <input type="text" name="name" class="form-control m-2" id="fullname" placeholder="Name" required/>
+                        <input type="text" name="emailaddress" class="form-control m-2" id="emailaddress" placeholder="Email" required/>
+                        <textarea rows="5" name="projectsummary" class="form-control m-2" id="projectsummary" placeholder="Project Description" required></textarea>
+                        <button type="submit" class="btn btn-secondary three-reasons-link-div center-block m-2">Send</button>
                     </form>
                 </div>
+            </div>
             </div>
         </div>
     </section>
@@ -107,5 +111,6 @@
             </div>
         </div>
     </footer>
+    <script src="assets/js/sendEmail.js"></script>
 </body>
 </html>
